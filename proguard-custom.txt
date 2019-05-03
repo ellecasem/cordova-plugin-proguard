@@ -111,8 +111,4 @@
 -dontwarn android.net.SSLCertificateSocketFactory
 -dontwarn android.net.http.*
 
-# These to ignore warnings during apk signing - Jenkins issue
--dontwarn okhttp3.**
--dontwarn okio.**
--dontwarn javax.annotation.**
--dontwarn com.squareup.okhttp.**
+
