@@ -1,4 +1,3 @@
-# test fork
 # To enable ProGuard in your project, edit project.properties
 # to define the proguard.config property as described in that file.
 # Add project specific ProGuard rules here.
@@ -111,3 +110,9 @@
 -dontwarn android.support.v4.**
 -dontwarn android.net.SSLCertificateSocketFactory
 -dontwarn android.net.http.*
+
+# These to ignore warnings during apk signing - Jenkins issue
+-dontwarn okhttp3.**
+-dontwarn okio.**
+-dontwarn javax.annotation.**
+-dontwarn com.squareup.okhttp.**
