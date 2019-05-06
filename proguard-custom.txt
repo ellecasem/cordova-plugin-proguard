@@ -32,6 +32,12 @@
 # If the program terminates with an exception, this option will print out the entire stack trace, instead of just the exception message.
 -verbose
 
+# These to ignore warnings during apk signing. Jenkins issue
+-dontwarn okhttp3.**
+-dontwarn okio.**
+-dontwarn javax.annotation.**
+-dontwarn com.squareup.okhttp.**
+
 # Annotations are represented by attributes that have no direct effect on the execution of the code. 
 -keepattributes *Annotation*
 
@@ -110,9 +116,3 @@
 -dontwarn android.support.v4.**
 -dontwarn android.net.SSLCertificateSocketFactory
 -dontwarn android.net.http.*
-
-# These to ignore warnings during apk signing. Jenkins issue
--dontwarn okhttp3.**
--dontwarn okio.**
--dontwarn javax.annotation.**
--dontwarn com.squareup.okhttp.**
