@@ -40,7 +40,6 @@
 -dontwarn java.awt.**
 -dontusemixedcaseclassnames
 -dontskipnonpubliclibraryclasses
--verbose
 
 # Annotations are represented by attributes that have no direct effect on the execution of the code. 
 -keepattributes *Annotation*
@@ -58,7 +57,7 @@
 
 # These options let obfuscated applications or libraries produce stack traces that can still be deciphered later on 
 -renamesourcefileattribute SourceFile    
--keepattributes SourceFile,LineNumberTable
+#-keepattributes SourceFile,LineNumberTable
 
 # Enable proguard with Cordova
 -keep class org.apache.cordova.** { *; }
