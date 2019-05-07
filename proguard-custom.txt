@@ -41,23 +41,10 @@
 -dontusemixedcaseclassnames
 -dontskipnonpubliclibraryclasses
 
-# Understand the @Keep support annotation.
--keep class android.support.annotation.Keep
-
--keep @android.support.annotation.Keep class * {*;}
-
--keepclasseswithmembers class * {
-    @android.support.annotation.Keep <methods>;
+# We want to keep methods in Activity that could be used in the XML attribute onClick
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
 }
-
--keepclasseswithmembers class * {
-    @android.support.annotation.Keep <fields>;
-}
-
--keepclasseswithmembers class * {
-    @android.support.annotation.Keep <init>(...);
-}
-
 
 # Annotations are represented by attributes that have no direct effect on the execution of the code. 
 -keepattributes *Annotation*
