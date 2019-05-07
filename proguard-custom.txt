@@ -37,6 +37,7 @@
 -dontwarn okio.**
 -dontwarn javax.annotation.**
 -dontwarn com.squareup.okhttp.**
+-dontwarn java.awt.**
 
 # Annotations are represented by attributes that have no direct effect on the execution of the code. 
 -keepattributes *Annotation*
