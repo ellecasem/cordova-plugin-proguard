@@ -38,6 +38,9 @@
 -dontwarn javax.annotation.**
 -dontwarn com.squareup.okhttp.**
 -dontwarn java.awt.**
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-verbose
 
 # Annotations are represented by attributes that have no direct effect on the execution of the code. 
 -keepattributes *Annotation*
