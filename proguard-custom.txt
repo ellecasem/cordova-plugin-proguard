@@ -50,7 +50,7 @@
     public static ** valueOf(java.lang.String);
 }
 
-#-keepattributes InnerClasses
+-keepattributes InnerClasses
 -keep class **.R
 -keep class **.R$* {
     <fields>;
@@ -58,7 +58,7 @@
 
 # These options let obfuscated applications or libraries produce stack traces that can still be deciphered later on 
 -renamesourcefileattribute SourceFile    
-#-keepattributes SourceFile,LineNumberTable
+-keepattributes SourceFile,LineNumberTable
 
 # Enable proguard with Cordova
 -keep class org.apache.cordova.** { *; }
