@@ -91,7 +91,7 @@
 -dontwarn com.google.ads.**
 
 # apache.http
--optimizations !class/merging/vertical*,!class/merging/horizontal*,!code/simplification/arithmetic,!field/*,!code/allocation/variable
+#-optimizations !class/merging/vertical*,!class/merging/horizontal*,!code/simplification/arithmetic,!field/*,!code/allocation/variable
 
 -keep class net.sqlcipher.** { *; }
 -dontwarn net.sqlcipher.**
