@@ -41,21 +41,8 @@
 -dontusemixedcaseclassnames
 -dontskipnonpubliclibraryclasses
 
-# Understand the @Keep support annotation.
--keep class android.support.annotation.Keep
-
--keep @android.support.annotation.Keep class * {*;}
-
--keepclasseswithmembers class * {
-    @android.support.annotation.Keep <methods>;
-}
-
--keepclasseswithmembers class * {
-    @android.support.annotation.Keep <fields>;
-}
-
--keepclasseswithmembers class * {
-    @android.support.annotation.Keep <init>(...);
+-keepclassmembers class **.R$* {
+    public static <fields>;
 }
 
 # Annotations are represented by attributes that have no direct effect on the execution of the code. 
