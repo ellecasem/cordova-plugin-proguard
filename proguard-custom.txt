@@ -41,10 +41,6 @@
 -dontusemixedcaseclassnames
 -dontskipnonpubliclibraryclasses
 
--keepclassmembers class **.R$* {
-    public static <fields>;
-}
-
 # Understand the @Keep support annotation.
 -keep class android.support.annotation.Keep
 
