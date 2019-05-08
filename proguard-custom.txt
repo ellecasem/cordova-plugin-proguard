@@ -1,6 +1,13 @@
 # This is a configuration file for ProGuard.
 # http://proguard.sourceforge.net/index.html#manual/usage.html
 
+# These to ignore warnings during apk signing. Jenkins issue
+-dontwarn okhttp3.**
+-dontwarn okio.**
+-dontwarn javax.annotation.**
+-dontwarn com.squareup.okhttp.**
+-dontwarn java.awt.**
+
 -dontusemixedcaseclassnames
 -dontskipnonpubliclibraryclasses
 -verbose
