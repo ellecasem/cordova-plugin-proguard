@@ -27,35 +27,6 @@
 -dontwarn com.squareup.okhttp.**
 -dontwarn java.awt.**
 
-
-# Enable proguard with Cordova
-#-keep class org.apache.cordova.** { *; }
--keep public class * extends org.apache.cordova.CordovaPlugin
-
--keep class com.google.android.gms.dynamite.DynamiteModule$DynamiteLoaderClassLoader { java.lang.ClassLoader sClassLoader; }
--keep class com.google.android.gms.dynamite.descriptors.com.google.android.gms.flags.ModuleDescriptor { int MODULE_VERSION; }
--keep class com.google.android.gms.dynamite.descriptors.com.google.android.gms.flags.ModuleDescriptor { java.lang.String MODULE_ID; }
-
--keep class org.apache.cordova.CordovaBridge { org.apache.cordova.PluginManager pluginManager; }
--keep class org.apache.cordova.CordovaInterfaceImpl { org.apache.cordova.PluginManager pluginManager; }
--keep class org.apache.cordova.CordovaResourceApi { org.apache.cordova.PluginManager pluginManager; }
--keep class org.apache.cordova.CordovaWebViewImpl { org.apache.cordova.PluginManager pluginManager; }
--keep class org.apache.cordova.ResumeCallback { org.apache.cordova.PluginManager pluginManager; }
--keep class org.apache.cordova.engine.SystemWebViewEngine { org.apache.cordova.PluginManager pluginManager; }
-
--keep class com.google.gson.internal.UnsafeAllocator { ** theUnsafe; }
--keep class me.leolin.shortcutbadger.ShortcutBadger { ** extraNotification; }
--keep class me.leolin.shortcutbadger.impl.XiaomiHomeBadger { ** messageCount; }
--keep class me.leolin.shortcutbadger.impl.XiaomiHomeBadger { ** extraNotification; }
-
--dontnote org.apache.harmony.xnet.provider.jsse.NativeCrypto
--dontnote sun.misc.Unsafe
-
--keep class com.worklight.androidgap.push.** { *; }
--keep class com.worklight.wlclient.push.** { *; }
-
-#END
-
 # For native methods, see http://proguard.sourceforge.net/manual/examples.html#native
 -keepclasseswithmembernames class * {
     native <methods>;
