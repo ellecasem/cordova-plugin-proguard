@@ -28,7 +28,7 @@
 -dontwarn java.awt.**
 
 # Enable proguard with Cordova
--keepclassmembernames org.apache.cordova.** { *; }
+-keep org.apache.cordova.** { *; }
 -keep public class * extends org.apache.cordova.CordovaPlugin
 
 #END
