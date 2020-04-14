@@ -51,7 +51,6 @@
 }
 
 # For enumeration classes, see http://proguard.sourceforge.net/manual/examples.html#enumerations
--keep class com.accenture.streamapp.BuildConfig { *; }
 -keepclassmembers enum * {
     public static **[] values();
     public static ** valueOf(java.lang.String);
